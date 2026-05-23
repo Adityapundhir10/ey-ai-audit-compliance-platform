@@ -1,0 +1,54 @@
+[
+  {
+    "vendor_id": "V-FAC-001",
+    "vendor_name": "Northstar Facilities Pvt Ltd",
+    "country": "IN",
+    "risk_tier": "low",
+    "duplicate_rate": 0.02,
+    "late_submission_rate": 0.04,
+    "historical_exception_rate": 0.03,
+    "average_invoice_amount": 144000,
+    "metadata_json": {
+      "category": "facility_services"
+    }
+  },
+  {
+    "vendor_id": "V-IT-002",
+    "vendor_name": "Zenith Cloud Systems",
+    "country": "IN",
+    "risk_tier": "medium",
+    "duplicate_rate": 0.06,
+    "late_submission_rate": 0.09,
+    "historical_exception_rate": 0.11,
+    "average_invoice_amount": 690000,
+    "metadata_json": {
+      "category": "software"
+    }
+  },
+  {
+    "vendor_id": "V-LOG-003",
+    "vendor_name": "RapidRoute Logistics",
+    "country": "IN",
+    "risk_tier": "low",
+    "duplicate_rate": 0.01,
+    "late_submission_rate": 0.12,
+    "historical_exception_rate": 0.05,
+    "average_invoice_amount": 85000,
+    "metadata_json": {
+      "category": "logistics"
+    }
+  },
+  {
+    "vendor_id": "V-MKT-004",
+    "vendor_name": "BrightWave Media",
+    "country": "IN",
+    "risk_tier": "high",
+    "duplicate_rate": 0.13,
+    "late_submission_rate": 0.18,
+    "historical_exception_rate": 0.22,
+    "average_invoice_amount": 260000,
+    "metadata_json": {
+      "category": "marketing"
+    }
+  }
+]

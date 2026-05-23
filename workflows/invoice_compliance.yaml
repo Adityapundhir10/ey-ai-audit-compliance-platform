@@ -1,0 +1,25 @@
+name: invoice_compliance_audit
+version: 1
+start_at: extract_invoice
+nodes:
+  extract_invoice:
+    callable: ey_audit_ai.agents:ExtractionAgent
+    retries: 1
+    next: [reconcile_po]
+  reconcile_po:
+    callable: ey_audit_ai.agents:ReconciliationAgent
+    retries: 1
+    next: [retrieve_policy_context]
+  retrieve_policy_context:
+    callable: ey_audit_ai.agents:ComplianceRAGAgent
+    next: [score_fraud]
+  score_fraud:
+    callable: ey_audit_ai.agents:FraudAgent
+    next: [route_approval]
+  route_approval:
+    callable: ey_audit_ai.agents:ApprovalRouterAgent
+    condition: state.requires_manual_approval
+    next: [generate_evidence, generate_evidence]
+  generate_evidence:
+    callable: ey_audit_ai.agents:EvidenceAgent
+    next: [end]

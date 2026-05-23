@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#ffffff"/>
+  <text x="40" y="42" font-size="26" font-family="Arial" font-weight="bold">Multi-Agent Invoice Audit Workflow</text>
+  <g font-family="Arial" font-size="14">
+    <circle cx="80" cy="170" r="34" fill="#dbeafe" stroke="#1d4ed8"/><text x="61" y="175">Start</text>
+    <rect x="150" y="135" width="150" height="70" rx="10" fill="#ecfccb" stroke="#4d7c0f"/><text x="175" y="164">Extraction</text><text x="170" y="186">Agent</text>
+    <rect x="350" y="135" width="150" height="70" rx="10" fill="#fef9c3" stroke="#a16207"/><text x="380" y="164">PO Recon</text><text x="392" y="186">Agent</text>
+    <rect x="550" y="135" width="150" height="70" rx="10" fill="#ede9fe" stroke="#6d28d9"/><text x="585" y="164">RAG</text><text x="575" y="186">Agent</text>
+    <rect x="750" y="135" width="150" height="70" rx="10" fill="#fee2e2" stroke="#b91c1c"/><text x="785" y="164">Fraud</text><text x="778" y="186">Agent</text>
+    <rect x="950" y="135" width="150" height="70" rx="10" fill="#dcfce7" stroke="#15803d"/><text x="980" y="164">Approval</text><text x="980" y="186">Router</text>
+    <rect x="950" y="255" width="150" height="70" rx="10" fill="#f1f5f9" stroke="#334155"/><text x="985" y="284">Audit</text><text x="972" y="306">Evidence</text>
+    <path d="M114 170 L150 170" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M300 170 L350 170" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M500 170 L550 170" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M700 170 L750 170" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M900 170 L950 170" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M1025 205 L1025 255" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker></defs>
+</svg>

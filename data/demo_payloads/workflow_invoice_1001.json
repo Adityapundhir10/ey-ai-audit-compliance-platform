@@ -1,0 +1,5 @@
+{
+  "raw_text": "\nInvoice Number: INV-1001\nVendor ID: V-FAC-001\nVendor Name: Northstar Facilities Pvt Ltd\nPO Number: PO-2025-001\nInvoice Date: 2025-06-18\nDue Date: 2025-07-18\nCurrency: INR\nSubtotal: 125000\nTax: 22500\nTotal: 147500\nITEM|Quarterly facility audit and cleaning controls|qty=1|unit=125000|amount=125000|gl=GL-620|cc=CC-FINOPS\n",
+  "priority": "high",
+  "simulate_human_approval": true
+}

@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "EY Audit AI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/health"
+      }
+    },
+    {
+      "name": "Run Invoice Audit",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8000/workflows/invoice-audit/run",
+        "body": {
+          "mode": "raw",
+          "raw": "{{invoice_workflow_payload}}"
+        }
+      }
+    },
+    {
+      "name": "Search Policies",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/policies/search?q=duplicate%20invoice&top_k=5"
+      }
+    },
+    {
+      "name": "Metrics",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/metrics"
+      }
+    }
+  ]
+}

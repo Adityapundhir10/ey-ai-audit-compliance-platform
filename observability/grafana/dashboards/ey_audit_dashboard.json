@@ -1,0 +1,52 @@
+{
+  "title": "EY-Style AI Audit Workflow Dashboard",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Workflow Latency",
+      "targets": [
+        {
+          "expr": "rate(ey_workflow_latency_seconds_sum[1m]) / rate(ey_workflow_latency_seconds_count[1m])"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Completed Workflows",
+      "targets": [
+        {
+          "expr": "ey_workflow_runs_total{status=\"completed\"}"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 6,
+        "h": 8
+      }
+    },
+    {
+      "type": "gauge",
+      "title": "Fraud Score",
+      "targets": [
+        {
+          "expr": "ey_invoice_fraud_score"
+        }
+      ],
+      "gridPos": {
+        "x": 18,
+        "y": 0,
+        "w": 6,
+        "h": 8
+      }
+    }
+  ]
+}

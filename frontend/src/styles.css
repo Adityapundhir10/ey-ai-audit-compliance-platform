@@ -1,0 +1,27 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f7fb; color: #18212f; }
+body { margin: 0; }
+main { max-width: 1180px; margin: 0 auto; padding: 32px 20px 60px; }
+.hero { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 34px; border-radius: 30px; background: linear-gradient(135deg, #1b2a41, #2b4162); color: white; box-shadow: 0 22px 50px rgba(21, 38, 66, .25); }
+.hero h1 { font-size: clamp(32px, 5vw, 58px); line-height: .96; margin: 18px 0; letter-spacing: -2px; max-width: 780px; }
+.hero p { color: #dce7ff; max-width: 760px; font-size: 18px; }
+.ey-chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; background: rgba(255, 230, 0, .15); border: 1px solid rgba(255,255,255,.2); border-radius: 999px; color: #fff4a3; font-weight: 700; }
+.grid { display: grid; gap: 18px; margin-top: 18px; }
+.grid.four { grid-template-columns: repeat(4, 1fr); }
+.grid.two { grid-template-columns: 1.1fr .9fr; }
+.card { background: white; border: 1px solid #e8edf5; border-radius: 24px; padding: 22px; box-shadow: 0 16px 34px rgba(20, 30, 50, .08); }
+.stat-card { display: flex; gap: 14px; align-items: center; }
+.stat-icon { width: 44px; height: 44px; border-radius: 16px; background: #fff7cc; color: #766000; display: grid; place-items: center; }
+h2 { margin: 4px 0; font-size: 32px; } h3 { display: flex; align-items: center; gap: 8px; margin-top: 0; }
+.muted { margin: 0; color: #6a7280; font-size: 14px; }
+span { color: #596273; }
+button { border: 0; border-radius: 16px; padding: 13px 18px; font-weight: 800; cursor: pointer; }
+button.primary { background: #ffe600; color: #1b2a41; min-width: 180px; }
+button.secondary { background: #1b2a41; color: white; margin-top: 10px; }
+textarea { width: 100%; min-height: 95px; border: 1px solid #d8e0ec; border-radius: 16px; padding: 14px; font: inherit; box-sizing: border-box; }
+.rag-answer { margin-top: 14px; background: #f7f9fc; padding: 14px; border-radius: 14px; color: #263244; }
+pre { overflow: auto; background: #0f172a; color: #c7f9cc; padding: 16px; border-radius: 16px; }
+.table { display: grid; gap: 6px; }
+.row { display: grid; grid-template-columns: 1.1fr 1.8fr .8fr 1fr .6fr; gap: 12px; padding: 12px; border-radius: 12px; background: #f8fafc; }
+.row.head { background: #eef2f7; font-weight: 800; }
+@media (max-width: 900px) { .hero, .grid.two { grid-template-columns: 1fr; display: grid; } .grid.four { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px) { .grid.four { grid-template-columns: 1fr; } .row { grid-template-columns: 1fr; } }

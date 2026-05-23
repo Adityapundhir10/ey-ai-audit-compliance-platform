@@ -1,0 +1,11 @@
+Invoice Number: INV-2001
+Vendor ID: V-IT-002
+Vendor Name: Zenith Cloud Systems
+PO Number: PO-2025-002
+Invoice Date: 2025-06-21
+Due Date: 2025-07-21
+Currency: INR
+Subtotal: 630000
+Tax: 113400
+Total: 743400
+ITEM|Enterprise audit analytics platform license|qty=1|unit=630000|amount=630000|gl=GL-710|cc=CC-ITPROC

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#f6f8fb"/>
+  <text x="60" y="70" font-family="Arial" font-size="34" font-weight="700" fill="#1b2a41">AI Enterprise Audit &amp; Invoice Compliance Platform</text>
+  <text x="60" y="105" font-family="Arial" font-size="16" fill="#586174">Clean-room architecture for invoice validation, RAG policy evidence, fraud scoring, and audit workflow automation</text>
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.15"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#4b5d78"/></marker>
+  </defs>
+  <g font-family="Arial" filter="url(#shadow)">
+    <rect x="60" y="150" width="210" height="95" rx="18" fill="#1b2a41"/>
+    <text x="88" y="190" font-size="20" font-weight="700" fill="#ffffff">React Dashboard</text>
+    <text x="88" y="218" font-size="14" fill="#dce7ff">Workflow monitoring</text>
+
+    <rect x="370" y="135" width="260" height="125" rx="20" fill="#ffffff" stroke="#d8e0ec"/>
+    <text x="402" y="178" font-size="22" font-weight="700" fill="#1b2a41">FastAPI Gateway</text>
+    <text x="402" y="207" font-size="14" fill="#667085">OpenAPI, auth-ready APIs</text>
+    <text x="402" y="230" font-size="14" fill="#667085">Prometheus + OTEL tracing</text>
+
+    <rect x="735" y="135" width="330" height="125" rx="20" fill="#fff7cc" stroke="#e6cf4a"/>
+    <text x="765" y="178" font-size="22" font-weight="700" fill="#3d3300">Document Intelligence</text>
+    <text x="765" y="207" font-size="14" fill="#5c520d">OCR normalization</text>
+    <text x="765" y="230" font-size="14" fill="#5c520d">Azure Form Recognizer adapter</text>
+
+    <rect x="70" y="355" width="230" height="190" rx="22" fill="#ffffff" stroke="#d8e0ec"/>
+    <text x="98" y="392" font-size="20" font-weight="700" fill="#1b2a41">Agent Workflow</text>
+    <text x="98" y="425" font-size="14" fill="#667085">Intake</text>
+    <text x="98" y="448" font-size="14" fill="#667085">Extraction</text>
+    <text x="98" y="471" font-size="14" fill="#667085">Reconciliation</text>
+    <text x="98" y="494" font-size="14" fill="#667085">Compliance</text>
+    <text x="98" y="517" font-size="14" fill="#667085">Fraud + approval</text>
+
+    <rect x="370" y="345" width="260" height="210" rx="22" fill="#ffffff" stroke="#d8e0ec"/>
+    <text x="402" y="385" font-size="20" font-weight="700" fill="#1b2a41">Compliance RAG</text>
+    <text x="402" y="418" font-size="14" fill="#667085">Policy chunking</text>
+    <text x="402" y="441" font-size="14" fill="#667085">Hybrid retrieval</text>
+    <text x="402" y="464" font-size="14" fill="#667085">Reranking-ready interface</text>
+    <text x="402" y="487" font-size="14" fill="#667085">Citations in audit trail</text>
+
+    <rect x="735" y="345" width="330" height="210" rx="22" fill="#ffffff" stroke="#d8e0ec"/>
+    <text x="765" y="385" font-size="20" font-weight="700" fill="#1b2a41">Fraud Intelligence</text>
+    <text x="765" y="418" font-size="14" fill="#667085">Duplicate invoice signals</text>
+    <text x="765" y="441" font-size="14" fill="#667085">Vendor-risk features</text>
+    <text x="765" y="464" font-size="14" fill="#667085">Isolation Forest anomaly score</text>
+    <text x="765" y="487" font-size="14" fill="#667085">Human review recommendation</text>
+
+    <rect x="110" y="625" width="250" height="80" rx="18" fill="#e8f4ff" stroke="#aed7ff"/>
+    <text x="140" y="660" font-size="18" font-weight="700" fill="#1b2a41">PostgreSQL / SQLite</text>
+    <text x="140" y="684" font-size="13" fill="#667085">Invoices, states, audit events</text>
+
+    <rect x="465" y="625" width="250" height="80" rx="18" fill="#e9fbef" stroke="#b8ebc5"/>
+    <text x="495" y="660" font-size="18" font-weight="700" fill="#1b2a41">Redis / Queue</text>
+    <text x="495" y="684" font-size="13" fill="#667085">Async workflow jobs</text>
+
+    <rect x="820" y="625" width="250" height="80" rx="18" fill="#f1ecff" stroke="#d0c2ff"/>
+    <text x="850" y="660" font-size="18" font-weight="700" fill="#1b2a41">Prometheus / Grafana</text>
+    <text x="850" y="684" font-size="13" fill="#667085">Latency, risk, confidence</text>
+  </g>
+  <g stroke="#4b5d78" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M270 197 L370 197"/>
+    <path d="M630 197 L735 197"/>
+    <path d="M500 260 L500 345"/>
+    <path d="M370 455 L300 455"/>
+    <path d="M630 455 L735 455"/>
+    <path d="M185 545 L220 625"/>
+    <path d="M500 555 L580 625"/>
+    <path d="M900 555 L940 625"/>
+  </g>
+</svg>

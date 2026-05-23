@@ -1,0 +1,11 @@
+lNV Number: INV-1002
+Vendor ID: V-FAC-001
+Vendor Name: Northstar Facilities Pvt Ltd
+PO Number: PO-2025-001
+Invoice Date: 2025-06-19
+Due Date: 2025-07-19
+Currency: INR
+Subtotal: 125000
+Tax: 22500
+Total: 147500
+ITEM|Quarterly facility audit and cleaning controls duplicate submission|qty=1|unit=125000|amount=125000|gl=GL-620|cc=CC-FINOPS

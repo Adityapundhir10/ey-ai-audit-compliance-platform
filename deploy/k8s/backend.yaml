@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ey-audit-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ey-audit-backend
+  template:
+    metadata:
+      labels:
+        app: ey-audit-backend
+    spec:
+      containers:
+        - name: backend
+          image: ey-audit-backend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              value: sqlite:///./ey_audit_demo.db
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ey-audit-backend
+spec:
+  selector:
+    app: ey-audit-backend
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: ClusterIP

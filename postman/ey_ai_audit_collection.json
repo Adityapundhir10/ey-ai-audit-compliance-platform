@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "EY-Style AI Enterprise Audit API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/health"
+      }
+    },
+    {
+      "name": "Reset Demo",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8000/api/v1/demo/reset"
+      }
+    },
+    {
+      "name": "RAG Query",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\": \"approval threshold above INR 500000\", \"top_k\": 3}"
+        },
+        "url": "http://localhost:8000/api/v1/rag/query"
+      }
+    },
+    {
+      "name": "List Invoices",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/invoices"
+      }
+    }
+  ]
+}

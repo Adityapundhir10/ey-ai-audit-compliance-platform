@@ -1,0 +1,38 @@
+name: enterprise_invoice_compliance_workflow
+version: 1.0.0
+sla:
+  default_minutes: 240
+  high_priority_minutes: 60
+states:
+  - intake_agent
+  - extraction_agent
+  - reconciliation_agent
+  - compliance_agent
+  - fraud_agent
+  - human_approval_agent
+  - audit_evidence_agent
+routing:
+  extraction_agent:
+    on_success: reconciliation_agent
+    on_failure: human_approval_agent
+  reconciliation_agent:
+    if: not matched
+    then: human_approval_agent
+    else: compliance_agent
+  compliance_agent:
+    if: violations_present or required_approvals_present
+    then: fraud_agent
+    else: fraud_agent
+  fraud_agent:
+    if: fraud_score >= 0.35 or required_approvals_present
+    then: human_approval_agent
+    else: audit_evidence_agent
+  human_approval_agent:
+    on_complete: audit_evidence_agent
+controls:
+  - schema_constrained_extraction
+  - po_three_way_match
+  - approval_threshold_policy
+  - duplicate_invoice_screening
+  - vendor_risk_scoring
+  - audit_trail_generation

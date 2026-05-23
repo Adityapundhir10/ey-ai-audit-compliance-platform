@@ -1,0 +1,18 @@
+INVOICE
+Invoice ID: INV-2025-1042
+Vendor ID: VND-8842
+Vendor Name: Northstar Facilities Pvt Ltd
+Invoice Date: 2025-07-12
+Due Date: 2025-08-11
+PO ID: PO-2025-7781
+Currency: INR
+Payment Terms: Net 30
+
+Line Items
+Preventive maintenance services | 10 | 1250.00 | 12500.00 | GL-6400
+Emergency HVAC repair visit | 4 | 3000.00 | 12000.00 | GL-6400
+Material replacement kit | 1 | 3800.00 | 3800.00 | GL-6500
+
+Subtotal: 28300.00
+Tax: 5094.00
+Total: 33394.00

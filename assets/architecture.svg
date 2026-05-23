@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="30" font-family="Arial" font-weight="bold">EY AI Enterprise Audit & Invoice Compliance Platform</text>
+  <g font-family="Arial" font-size="15">
+    <rect x="40" y="110" width="180" height="80" rx="12" fill="#e0f2fe" stroke="#0369a1"/>
+    <text x="65" y="145">Invoice Documents</text><text x="65" y="168">PDF/OCR/Text</text>
+    <rect x="270" y="110" width="210" height="80" rx="12" fill="#ecfccb" stroke="#4d7c0f"/>
+    <text x="295" y="140">Document Intelligence</text><text x="295" y="165">Azure FR + OCR + Schema</text>
+    <rect x="530" y="110" width="210" height="80" rx="12" fill="#fef3c7" stroke="#b45309"/>
+    <text x="555" y="140">PO Reconciliation</text><text x="555" y="165">Amount, Vendor, Date</text>
+    <rect x="790" y="110" width="210" height="80" rx="12" fill="#ede9fe" stroke="#6d28d9"/>
+    <text x="815" y="140">Compliance RAG</text><text x="815" y="165">Policy Retrieval + Rerank</text>
+    <rect x="530" y="270" width="210" height="80" rx="12" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="555" y="300">Fraud Intelligence</text><text x="555" y="325">Duplicates + Anomalies</text>
+    <rect x="790" y="270" width="210" height="80" rx="12" fill="#dcfce7" stroke="#15803d"/>
+    <text x="815" y="300">Approval Router</text><text x="815" y="325">HITL + Escalation</text>
+    <rect x="530" y="430" width="210" height="80" rx="12" fill="#f1f5f9" stroke="#334155"/>
+    <text x="555" y="460">Audit Evidence</text><text x="555" y="485">JSON + Markdown Bundle</text>
+    <rect x="790" y="430" width="210" height="80" rx="12" fill="#fae8ff" stroke="#a21caf"/>
+    <text x="815" y="460">Observability</text><text x="815" y="485">Metrics + Traces + Logs</text>
+    <path d="M220 150 L270 150" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M480 150 L530 150" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M740 150 L790 150" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M635 190 L635 270" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M740 310 L790 310" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M895 350 L895 430" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M790 470 L740 470" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker></defs>
+</svg>

@@ -1,0 +1,14 @@
+[
+  {
+    "po_id": "PO-2025-7781",
+    "vendor_id": "VND-8842",
+    "currency": "INR",
+    "approved_total": 31000.0,
+    "remaining_balance": 32000.0,
+    "valid_from": "2025-06-01",
+    "valid_to": "2025-09-30",
+    "cost_center": "CC-FAC-009",
+    "approver_email": "finance.controller@example.com",
+    "status": "approved"
+  }
+]

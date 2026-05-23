@@ -1,0 +1,4 @@
+vendor_id,vendor_name,risk_tier,country,average_invoice_value,on_watchlist
+VND-8842,Northstar Facilities Pvt Ltd,medium,IN,14500,false
+VND-9910,Atlas Procurement Services,high,IN,42000,true
+VND-2107,BluePeak IT Support,low,IN,8500,false

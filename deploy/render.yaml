@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ey-audit-ai-api
+    env: docker
+    plan: starter
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: PROMETHEUS_ENABLED
+        value: true
+      - key: ENABLE_AZURE_FORM_RECOGNIZER
+        value: false
+      - key: ENABLE_OPENAI_LLM
+        value: false

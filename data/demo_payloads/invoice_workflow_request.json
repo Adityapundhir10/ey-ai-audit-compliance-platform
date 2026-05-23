@@ -1,0 +1,76 @@
+{
+  "invoice_document_text": "INVOICE\nInvoice ID: INV-2025-1042\nVendor ID: VND-8842\nVendor Name: Northstar Facilities Pvt Ltd\nInvoice Date: 2025-07-12\nDue Date: 2025-08-11\nPO ID: PO-2025-7781\nCurrency: INR\nPayment Terms: Net 30\n\nLine Items\nPreventive maintenance services | 10 | 1250.00 | 12500.00 | GL-6400\nEmergency HVAC repair visit | 4 | 3000.00 | 12000.00 | GL-6400\nMaterial replacement kit | 1 | 3800.00 | 3800.00 | GL-6500\n\nSubtotal: 28300.00\nTax: 5094.00\nTotal: 33394.00\n",
+  "purchase_order": {
+    "po_id": "PO-2025-7781",
+    "vendor_id": "VND-8842",
+    "currency": "INR",
+    "approved_total": 31000.0,
+    "remaining_balance": 32000.0,
+    "valid_from": "2025-06-01",
+    "valid_to": "2025-09-30",
+    "cost_center": "CC-FAC-009",
+    "approver_email": "finance.controller@example.com",
+    "status": "approved",
+    "line_items": [
+      {
+        "description": "Preventive maintenance services",
+        "quantity": 10,
+        "unit_price": 1250.0,
+        "amount": 12500.0,
+        "gl_code": "GL-6400"
+      },
+      {
+        "description": "Emergency HVAC repair visit",
+        "quantity": 4,
+        "unit_price": 3000.0,
+        "amount": 12000.0,
+        "gl_code": "GL-6400"
+      },
+      {
+        "description": "Material replacement kit",
+        "quantity": 1,
+        "unit_price": 3800.0,
+        "amount": 3800.0,
+        "gl_code": "GL-6500"
+      }
+    ]
+  },
+  "vendor_profile": {
+    "vendor_id": "VND-8842",
+    "vendor_name": "Northstar Facilities Pvt Ltd",
+    "risk_tier": "medium",
+    "country": "IN",
+    "average_invoice_value": 14500.0,
+    "on_watchlist": false
+  },
+  "historical_invoices": [
+    {
+      "invoice_id": "INV-2025-0990",
+      "vendor_id": "VND-8842",
+      "po_id": "PO-2025-7781",
+      "invoice_date": "2025-06-27",
+      "total": 33394.0
+    },
+    {
+      "invoice_id": "INV-2025-0844",
+      "vendor_id": "VND-8842",
+      "po_id": "PO-2025-6121",
+      "invoice_date": "2025-05-14",
+      "total": 12100.0
+    },
+    {
+      "invoice_id": "INV-2025-0721",
+      "vendor_id": "VND-8842",
+      "po_id": "PO-2025-6000",
+      "invoice_date": "2025-04-03",
+      "total": 13880.0
+    },
+    {
+      "invoice_id": "INV-2025-0602",
+      "vendor_id": "VND-8842",
+      "po_id": "PO-2025-5901",
+      "invoice_date": "2025-03-18",
+      "total": 9900.0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: EY Audit Dashboards
+    orgId: 1
+    folder: EY Audit
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
